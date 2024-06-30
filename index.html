@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        .main-img{
+    height: 400px;
+    width: 350px;
+    object-fit: cover;
+    border: 2px solid rgb(89, 87, 87);
+    border-radius: 15px;
+    box-shadow: 10px 15px 25px 5px rgb(43, 41, 41);
+    padding: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-img-container{
+    display: flex;
+    justify-content: center;
+}
+
+.watch-img{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    padding: 10px;
+    margin: 40px 10px;
+    border: 2px solid rgb(65, 67, 65);
+    border-radius: 15px;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <img src="watch-1.PNG" alt="watch-img" class="main-img" id="main-img">
+
+    <div class="product-img-container">
+        <img src="watch-1.PNG" alt="watch-img" class="watch-img" onclick="changeimg(1)">
+        <img src="watch-2.PNG" alt="watch-img" class="watch-img" onclick="changeimg(2)">
+        <img src="watch-3.PNG" alt="watch-img" class="watch-img" onclick="changeimg(3)">
+        <img src="watch-4.PNG" alt="watch-img" class="watch-img" onclick="changeimg(4)">
+        <img src="watch-5.PNG" alt="watch-img" class="watch-img" onclick="changeimg(5)">
+    </div>
+
+    <script>
+        function changeimg(num){
+            const img = document.getElementById("main-img")
+
+            if(num==1){
+                img.src = "watch-1.PNG"
+            }
+            else if (num==2){
+                img.src = "watch-2.PNG"
+            }
+            else if (num==3){
+                img.src = "watch-3.png"
+            }
+            else if (num==4){
+                img.src = "watch-4.png"
+            }
+            else{
+                img.src = "watch-5.png"
+            }
+        }
+    </script>
+</body>
+</html>
